@@ -50,7 +50,7 @@ end
 
 group :production, :staging do
   gem "rails_12factor"
-  gem 'exception_notification'
+  # gem 'exception_notification'
   gem 'unicorn'
 end
 
