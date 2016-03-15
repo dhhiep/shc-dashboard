@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Key:</strong>
+  <%= @central.key %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @central.value %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @central.description %>
+</p>
+
+<%= link_to 'Edit', edit_central_path(@central) %> |
+<%= link_to 'Back', centrals_path %>
