@@ -1,0 +1,808 @@
+/ top tiles
+.row.tile_count
+  .animated.flipInY.col-md-2.col-sm-4.col-xs-4.tile_stats_count
+    .left
+    .right
+      %span.count_top
+        %i.fa.fa-user
+        Total Users
+      .count 2500
+      %span.count_bottom
+        %i.green 4%
+        From last Week
+  .animated.flipInY.col-md-2.col-sm-4.col-xs-4.tile_stats_count
+    .left
+    .right
+      %span.count_top
+        %i.fa.fa-clock-o
+        Average Time
+      .count 123.50
+      %span.count_bottom
+        %i.green
+          %i.fa.fa-sort-asc>
+          3%
+        From last Week
+  .animated.flipInY.col-md-2.col-sm-4.col-xs-4.tile_stats_count
+    .left
+    .right
+      %span.count_top
+        %i.fa.fa-user
+        Total Males
+      .count.green 2,500
+      %span.count_bottom
+        %i.green
+          %i.fa.fa-sort-asc>
+          34%
+        From last Week
+  .animated.flipInY.col-md-2.col-sm-4.col-xs-4.tile_stats_count
+    .left
+    .right
+      %span.count_top
+        %i.fa.fa-user
+        Total Females
+      .count 4,567
+      %span.count_bottom
+        %i.red
+          %i.fa.fa-sort-desc>
+          12%
+        From last Week
+  .animated.flipInY.col-md-2.col-sm-4.col-xs-4.tile_stats_count
+    .left
+    .right
+      %span.count_top
+        %i.fa.fa-user
+        Total Collections
+      .count 2,315
+      %span.count_bottom
+        %i.green
+          %i.fa.fa-sort-asc>
+          34%
+        From last Week
+  .animated.flipInY.col-md-2.col-sm-4.col-xs-4.tile_stats_count
+    .left
+    .right
+      %span.count_top
+        %i.fa.fa-user
+        Total Connections
+      .count 7,325
+      %span.count_bottom
+        %i.green
+          %i.fa.fa-sort-asc>
+          34%
+        From last Week
+/ /top tiles
+.row
+  .col-md-12.col-sm-12.col-xs-12
+    .dashboard_graph
+      .row.x_title
+        .col-md-6
+          %h3
+            Network Activities
+            %small Graph title sub-title
+        .col-md-6
+          #reportrange.pull-right{:style => "background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc"}
+            %i.glyphicon.glyphicon-calendar.fa.fa-calendar
+            %span December 30, 2014 - January 28, 2015
+            %b.caret
+      .col-md-9.col-sm-9.col-xs-12
+        #placeholder33.demo-placeholder{:style => "height: 260px; display: none"}
+        %div{:style => "width: 100%;"}
+          #canvas_dahs.demo-placeholder{:style => "width: 100%; height:270px;"}
+      .col-md-3.col-sm-3.col-xs-12.bg-white
+        .x_title
+          %h2 Top Campaign Performance
+          .clearfix
+        .col-md-12.col-sm-12.col-xs-6
+          %div
+            %p Facebook Campaign
+            %div
+              .progress.progress_sm{:style => "width: 76%;"}
+                .progress-bar.bg-green{"data-transitiongoal" => "80", :role => "progressbar"}
+          %div
+            %p Twitter Campaign
+            %div
+              .progress.progress_sm{:style => "width: 76%;"}
+                .progress-bar.bg-green{"data-transitiongoal" => "60", :role => "progressbar"}
+        .col-md-12.col-sm-12.col-xs-6
+          %div
+            %p Conventional Media
+            %div
+              .progress.progress_sm{:style => "width: 76%;"}
+                .progress-bar.bg-green{"data-transitiongoal" => "40", :role => "progressbar"}
+          %div
+            %p Bill boards
+            %div
+              .progress.progress_sm{:style => "width: 76%;"}
+                .progress-bar.bg-green{"data-transitiongoal" => "50", :role => "progressbar"}
+      .clearfix
+%br/
+.row
+  .col-md-4.col-sm-4.col-xs-12
+    .x_panel.tile.fixed_height_320
+      .x_title
+        %h2 App Versions
+        %ul.nav.navbar-right.panel_toolbox
+          %li
+            %a.collapse-link
+              %i.fa.fa-chevron-up
+          %li.dropdown
+            %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+              %i.fa.fa-wrench
+            %ul.dropdown-menu{:role => "menu"}
+              %li
+                %a{:href => "#"} Settings 1
+              %li
+                %a{:href => "#"} Settings 2
+          %li
+            %a.close-link
+              %i.fa.fa-close
+        .clearfix
+      .x_content
+        %h4 App Usage across versions
+        .widget_summary
+          .w_left.w_25
+            %span 0.1.5.2
+          .w_center.w_55
+            .progress
+              .progress-bar.bg-green{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", :role => "progressbar", :style => "width: 66%;"}
+                %span.sr-only 60% Complete
+          .w_right.w_20
+            %span 123k
+          .clearfix
+        .widget_summary
+          .w_left.w_25
+            %span 0.1.5.3
+          .w_center.w_55
+            .progress
+              .progress-bar.bg-green{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", :role => "progressbar", :style => "width: 45%;"}
+                %span.sr-only 60% Complete
+          .w_right.w_20
+            %span 53k
+          .clearfix
+        .widget_summary
+          .w_left.w_25
+            %span 0.1.5.4
+          .w_center.w_55
+            .progress
+              .progress-bar.bg-green{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", :role => "progressbar", :style => "width: 25%;"}
+                %span.sr-only 60% Complete
+          .w_right.w_20
+            %span 23k
+          .clearfix
+        .widget_summary
+          .w_left.w_25
+            %span 0.1.5.5
+          .w_center.w_55
+            .progress
+              .progress-bar.bg-green{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", :role => "progressbar", :style => "width: 5%;"}
+                %span.sr-only 60% Complete
+          .w_right.w_20
+            %span 3k
+          .clearfix
+        .widget_summary
+          .w_left.w_25
+            %span 0.1.5.6
+          .w_center.w_55
+            .progress
+              .progress-bar.bg-green{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", :role => "progressbar", :style => "width: 2%;"}
+                %span.sr-only 60% Complete
+          .w_right.w_20
+            %span 1k
+          .clearfix
+  .col-md-4.col-sm-4.col-xs-12
+    .x_panel.tile.fixed_height_320.overflow_hidden
+      .x_title
+        %h2 Device Usage
+        %ul.nav.navbar-right.panel_toolbox
+          %li
+            %a.collapse-link
+              %i.fa.fa-chevron-up
+          %li.dropdown
+            %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+              %i.fa.fa-wrench
+            %ul.dropdown-menu{:role => "menu"}
+              %li
+                %a{:href => "#"} Settings 1
+              %li
+                %a{:href => "#"} Settings 2
+          %li
+            %a.close-link
+              %i.fa.fa-close
+        .clearfix
+      .x_content
+        %table{:style => "width:100%"}
+          %tr
+            %th{:style => "width:37%;"}
+              %p Top 5
+            %th
+              .col-lg-7.col-md-7.col-sm-7.col-xs-7
+                %p Device
+              .col-lg-5.col-md-5.col-sm-5.col-xs-5
+                %p Progress
+          %tr
+            %td
+              %canvas#canvas1{:height => "140", :style => "margin: 15px 10px 10px 0", :width => "140"}
+            %td
+              %table.tile_info
+                %tr
+                  %td
+                    %p
+                      %i.fa.fa-square.blue>
+                      IOS
+                  %td 30%
+                %tr
+                  %td
+                    %p
+                      %i.fa.fa-square.green>
+                      Android
+                  %td 10%
+                %tr
+                  %td
+                    %p
+                      %i.fa.fa-square.purple>
+                      Blackberry
+                  %td 20%
+                %tr
+                  %td
+                    %p
+                      %i.fa.fa-square.aero>
+                      Symbian
+                  %td 15%
+                %tr
+                  %td
+                    %p
+                      %i.fa.fa-square.red>
+                      Others
+                  %td 30%
+  .col-md-4.col-sm-4.col-xs-12
+    .x_panel.tile.fixed_height_320
+      .x_title
+        %h2 Quick Settings
+        %ul.nav.navbar-right.panel_toolbox
+          %li
+            %a.collapse-link
+              %i.fa.fa-chevron-up
+          %li.dropdown
+            %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+              %i.fa.fa-wrench
+            %ul.dropdown-menu{:role => "menu"}
+              %li
+                %a{:href => "#"} Settings 1
+              %li
+                %a{:href => "#"} Settings 2
+          %li
+            %a.close-link
+              %i.fa.fa-close
+        .clearfix
+      .x_content
+        .dashboard-widget-content
+          %ul.quick-list
+            %li
+              %i.fa.fa-calendar-o
+              %a{:href => "#"} Settings
+            %li
+              %i.fa.fa-bars
+              %a{:href => "#"} Subscription
+            %li
+              %i.fa.fa-bar-chart
+              %a{:href => "#"} Auto Renewal
+            %li
+              %i.fa.fa-line-chart
+              %a{:href => "#"} Achievements
+            %li
+              %i.fa.fa-bar-chart
+              %a{:href => "#"} Auto Renewal
+            %li
+              %i.fa.fa-line-chart
+              %a{:href => "#"} Achievements
+            %li
+              %i.fa.fa-area-chart
+              %a{:href => "#"} Logout
+          .sidebar-widget
+            %h4 Profile Completion
+            %canvas#foo{:height => "80", :style => "width: 160px; height: 100px;", :width => "150"}
+            .goal-wrapper
+              %span.gauge-value.pull-left $
+              %span#gauge-text.gauge-value.pull-left 3,200
+              %span#goal-text.goal-value.pull-right $5,000
+.row
+  .col-md-4.col-sm-4.col-xs-12
+    .x_panel
+      .x_title
+        %h2
+          Recent Activities
+          %small Sessions
+        %ul.nav.navbar-right.panel_toolbox
+          %li
+            %a.collapse-link
+              %i.fa.fa-chevron-up
+          %li.dropdown
+            %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+              %i.fa.fa-wrench
+            %ul.dropdown-menu{:role => "menu"}
+              %li
+                %a{:href => "#"} Settings 1
+              %li
+                %a{:href => "#"} Settings 2
+          %li
+            %a.close-link
+              %i.fa.fa-close
+        .clearfix
+      .x_content
+        .dashboard-widget-content
+          %ul.list-unstyled.timeline.widget
+            %li
+              .block
+                .block_content
+                  %h2.title
+                    %a Who Needs Sundance When You’ve Got Crowdfunding?
+                  .byline
+                    %span 13 hours ago
+                    by
+                    %a Jane Smith
+                  %p.excerpt
+                    Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and…
+                    %a Read More
+            %li
+              .block
+                .block_content
+                  %h2.title
+                    %a Who Needs Sundance When You’ve Got Crowdfunding?
+                  .byline
+                    %span 13 hours ago
+                    by
+                    %a Jane Smith
+                  %p.excerpt
+                    Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and…
+                    %a Read More
+            %li
+              .block
+                .block_content
+                  %h2.title
+                    %a Who Needs Sundance When You’ve Got Crowdfunding?
+                  .byline
+                    %span 13 hours ago
+                    by
+                    %a Jane Smith
+                  %p.excerpt
+                    Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and…
+                    %a Read More
+            %li
+              .block
+                .block_content
+                  %h2.title
+                    %a Who Needs Sundance When You’ve Got Crowdfunding?
+                  .byline
+                    %span 13 hours ago
+                    by
+                    %a Jane Smith
+                  %p.excerpt
+                    Film festivals used to be do-or-die moments for movie makers. They were where you met the producers that could fund your project, and if the buyers liked your flick, they’d pay to Fast-forward and…
+                    %a Read More
+  .col-md-8.col-sm-8.col-xs-12
+    .row
+      .col-md-12.col-sm-12.col-xs-12
+        .x_panel
+          .x_title
+            %h2
+              Visitors location
+              %small geo-presentation
+            %ul.nav.navbar-right.panel_toolbox
+              %li
+                %a.collapse-link
+                  %i.fa.fa-chevron-up
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  %i.fa.fa-wrench
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{:href => "#"} Settings 1
+                  %li
+                    %a{:href => "#"} Settings 2
+              %li
+                %a.close-link
+                  %i.fa.fa-close
+            .clearfix
+          .x_content
+            .dashboard-widget-content
+              .col-md-4.hidden-small
+                %h2.line_30 125.7k Views from 60 countries
+                %table.countries_list
+                  %tbody
+                    %tr
+                      %td United States
+                      %td.fs15.fw700.text-right 33%
+                    %tr
+                      %td France
+                      %td.fs15.fw700.text-right 27%
+                    %tr
+                      %td Germany
+                      %td.fs15.fw700.text-right 16%
+                    %tr
+                      %td Spain
+                      %td.fs15.fw700.text-right 11%
+                    %tr
+                      %td Britain
+                      %td.fs15.fw700.text-right 10%
+              #world-map-gdp.col-md-8.col-sm-12.col-xs-12{:style => "height:230px;"}
+    .row
+      / Start to do list
+      .col-md-6.col-sm-6.col-xs-12
+        .x_panel
+          .x_title
+            %h2
+              To Do List
+              %small Sample tasks
+            %ul.nav.navbar-right.panel_toolbox
+              %li
+                %a.collapse-link
+                  %i.fa.fa-chevron-up
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  %i.fa.fa-wrench
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{:href => "#"} Settings 1
+                  %li
+                    %a{:href => "#"} Settings 2
+              %li
+                %a.close-link
+                  %i.fa.fa-close
+            .clearfix
+          .x_content
+            %div
+              %ul.to_do
+                %li
+                  %p
+                    %input.flat{:type => "checkbox"}/
+                    Schedule meeting with new client
+                %li
+                  %p
+                    %input.flat{:type => "checkbox"}/
+                    Create email address for new intern
+                %li
+                  %p
+                    %input.flat{:type => "checkbox"}/
+                    Have IT fix the network printer
+                %li
+                  %p
+                    %input.flat{:type => "checkbox"}/
+                    Copy backups to offsite location
+                %li
+                  %p
+                    %input.flat{:type => "checkbox"}/
+                    Food truck fixie locavors mcsweeney
+                %li
+                  %p
+                    %input.flat{:type => "checkbox"}/
+                    Food truck fixie locavors mcsweeney
+                %li
+                  %p
+                    %input.flat{:type => "checkbox"}/
+                    Create email address for new intern
+                %li
+                  %p
+                    %input.flat{:type => "checkbox"}/
+                    Have IT fix the network printer
+                %li
+                  %p
+                    %input.flat{:type => "checkbox"}/
+                    Copy backups to offsite location
+      / End to do list
+      / start of weather widget
+      .col-md-6.col-sm-6.col-xs-12
+        .x_panel
+          .x_title
+            %h2
+              Daily active users
+              %small Sessions
+            %ul.nav.navbar-right.panel_toolbox
+              %li
+                %a.collapse-link
+                  %i.fa.fa-chevron-up
+              %li.dropdown
+                %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                  %i.fa.fa-wrench
+                %ul.dropdown-menu{:role => "menu"}
+                  %li
+                    %a{:href => "#"} Settings 1
+                  %li
+                    %a{:href => "#"} Settings 2
+              %li
+                %a.close-link
+                  %i.fa.fa-close
+            .clearfix
+          .x_content
+            .row
+              .col-sm-12
+                .temperature
+                  %b> Monday
+                  , 07:30 AM
+                  %span F
+                  %span
+                    %b C
+            .row
+              .col-sm-4
+                .weather-icon
+                  %span
+                    %canvas#partly-cloudy-day{:height => "84", :width => "84"}
+              .col-sm-8
+                .weather-text
+                  %h2
+                    Texas
+                    %br/
+                    %i Partly Cloudy Day
+            .col-sm-12
+              .weather-text.pull-right
+                %h3.degrees 23
+            .clearfix
+            .row.weather-days
+              .col-sm-2
+                .daily-weather
+                  %h2.day Mon
+                  %h3.degrees 25
+                  %span
+                    %canvas#clear-day{:height => "32", :width => "32"}
+                  %h5
+                    15
+                    %i km/h
+              .col-sm-2
+                .daily-weather
+                  %h2.day Tue
+                  %h3.degrees 25
+                  %canvas#rain{:height => "32", :width => "32"}
+                  %h5
+                    12
+                    %i km/h
+              .col-sm-2
+                .daily-weather
+                  %h2.day Wed
+                  %h3.degrees 27
+                  %canvas#snow{:height => "32", :width => "32"}
+                  %h5
+                    14
+                    %i km/h
+              .col-sm-2
+                .daily-weather
+                  %h2.day Thu
+                  %h3.degrees 28
+                  %canvas#sleet{:height => "32", :width => "32"}
+                  %h5
+                    15
+                    %i km/h
+              .col-sm-2
+                .daily-weather
+                  %h2.day Fri
+                  %h3.degrees 28
+                  %canvas#wind{:height => "32", :width => "32"}
+                  %h5
+                    11
+                    %i km/h
+              .col-sm-2
+                .daily-weather
+                  %h2.day Sat
+                  %h3.degrees 26
+                  %canvas#cloudy{:height => "32", :width => "32"}
+                  %h5
+                    10
+                    %i km/h
+              .clearfix
+              
+= content_for :extra_js do
+  :javascript
+    $(document).ready(function() {
+      // [17, 74, 6, 39, 20, 85, 7]
+      //[82, 23, 66, 9, 99, 6, 2]
+      var data1 = [
+        [gd(2012, 1, 1), 17],
+        [gd(2012, 1, 2), 74],
+        [gd(2012, 1, 3), 6],
+        [gd(2012, 1, 4), 39],
+        [gd(2012, 1, 5), 20],
+        [gd(2012, 1, 6), 85],
+        [gd(2012, 1, 7), 7]
+      ];
+
+      var data2 = [
+        [gd(2012, 1, 1), 82],
+        [gd(2012, 1, 2), 23],
+        [gd(2012, 1, 3), 66],
+        [gd(2012, 1, 4), 9],
+        [gd(2012, 1, 5), 119],
+        [gd(2012, 1, 6), 6],
+        [gd(2012, 1, 7), 9]
+      ];
+      $("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
+        data1, data2
+      ], {
+        series: {
+          lines: {
+            show: false,
+            fill: true
+          },
+          splines: {
+            show: true,
+            tension: 0.4,
+            lineWidth: 1,
+            fill: 0.4
+          },
+          points: {
+            radius: 0,
+            show: true
+          },
+          shadowSize: 2
+        },
+        grid: {
+          verticalLines: true,
+          hoverable: true,
+          clickable: true,
+          tickColor: "#d5d5d5",
+          borderWidth: 1,
+          color: '#fff'
+        },
+        colors: ["rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)"],
+        xaxis: {
+          tickColor: "rgba(51, 51, 51, 0.06)",
+          mode: "time",
+          tickSize: [1, "day"],
+          //tickLength: 10,
+          axisLabel: "Date",
+          axisLabelUseCanvas: true,
+          axisLabelFontSizePixels: 12,
+          axisLabelFontFamily: 'Verdana, Arial',
+          axisLabelPadding: 10
+            //mode: "time", timeformat: "%m/%d/%y", minTickSize: [1, "day"]
+        },
+        yaxis: {
+          ticks: 8,
+          tickColor: "rgba(51, 51, 51, 0.06)",
+        },
+        tooltip: false
+      });
+
+      function gd(year, month, day) {
+        return new Date(year, month - 1, day).getTime();
+      }
+    });
+  :javascript
+    $(function() {
+      $('#world-map-gdp').vectorMap({
+        map: 'world_mill_en',
+        backgroundColor: 'transparent',
+        zoomOnScroll: false,
+        series: {
+          regions: [{
+            values: gdpData,
+            scale: ['#E6F2F0', '#149B7E'],
+            normalizeFunction: 'polynomial'
+          }]
+        },
+        onRegionTipShow: function(e, el, code) {
+          el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
+        }
+      });
+    });
+  :javascript
+    var icons = new Skycons({
+        "color": "#73879C"
+      }),
+      list = [
+        "clear-day", "clear-night", "partly-cloudy-day",
+        "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+        "fog"
+      ],
+      i;
+
+    for (i = list.length; i--;)
+      icons.set(list[i], list[i]);
+
+    icons.play();
+  :javascript
+    Chart.defaults.global.legend = {
+      enabled: false
+    };
+
+    var data = {
+      labels: [
+        "Symbian",
+        "Blackberry",
+        "Other",
+        "Android",
+        "IOS"
+      ],
+      datasets: [{
+        data: [15, 20, 30, 10, 30],
+        backgroundColor: [
+          "#BDC3C7",
+          "#9B59B6",
+          "#455C73",
+          "#26B99A",
+          "#3498DB"
+        ],
+        hoverBackgroundColor: [
+          "#CFD4D8",
+          "#B370CF",
+          "#34495E",
+          "#36CAAB",
+          "#49A9EA"
+        ]
+
+      }]
+    };
+
+    var canvasDoughnut = new Chart(document.getElementById("canvas1"), {
+      type: 'doughnut',
+      tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+      data: data
+    });
+  :javascript
+    $(document).ready(function() {
+
+      var cb = function(start, end, label) {
+        console.log(start.toISOString(), end.toISOString(), label);
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        //alert("Callback has fired: [" + start.format('MMMM D, YYYY') + " to " + end.format('MMMM D, YYYY') + ", label = " + label + "]");
+      }
+
+      var optionSet1 = {
+        startDate: moment().subtract(29, 'days'),
+        endDate: moment(),
+        minDate: '01/01/2012',
+        maxDate: '12/31/2015',
+        dateLimit: {
+          days: 60
+        },
+        showDropdowns: true,
+        showWeekNumbers: true,
+        timePicker: false,
+        timePickerIncrement: 1,
+        timePicker12Hour: true,
+        ranges: {
+          'Today': [moment(), moment()],
+          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month': [moment().startOf('month'), moment().endOf('month')],
+          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        opens: 'left',
+        buttonClasses: ['btn btn-default'],
+        applyClass: 'btn-small btn-primary',
+        cancelClass: 'btn-small',
+        format: 'MM/DD/YYYY',
+        separator: ' to ',
+        locale: {
+          applyLabel: 'Submit',
+          cancelLabel: 'Clear',
+          fromLabel: 'From',
+          toLabel: 'To',
+          customRangeLabel: 'Custom',
+          daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+          monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+          firstDay: 1
+        }
+      };
+      $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+      $('#reportrange').daterangepicker(optionSet1, cb);
+      $('#reportrange').on('show.daterangepicker', function() {
+        console.log("show event fired");
+      });
+      $('#reportrange').on('hide.daterangepicker', function() {
+        console.log("hide event fired");
+      });
+      $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+        console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+      });
+      $('#reportrange').on('cancel.daterangepicker', function(ev, picker) {
+        console.log("cancel event fired");
+      });
+      $('#options1').click(function() {
+        $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+      });
+      $('#options2').click(function() {
+        $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+      });
+      $('#destroy').click(function() {
+        $('#reportrange').data('daterangepicker').remove();
+      });
+    });

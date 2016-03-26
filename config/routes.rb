@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root 'centrals#index'
+  root 'home#index'
   
-  resources :centrals, :path => '' do
+  resources :centrals, :path => 'manage' do
     collection do
       get 'status/:key', action: :status, :as => :status
     end

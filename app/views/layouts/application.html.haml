@@ -1,0 +1,25 @@
+!!!
+%html{:lang => "en"}
+  %head
+    = render 'shared/head'
+  %body.nav-md
+    .container.body
+      .main_container
+        .col-md-3.left_col
+          .left_col.scroll-view
+            = render 'shared/left_side_bar'
+        .top_nav
+          = render 'shared/nav_menu'
+        .right_col{:role => "main"}
+          = yield
+          %footer
+            .copyright-info
+              %p.pull-right
+                Gentelella - Bootstrap Admin Template by
+                %a{:href => "https://colorlib.com"} Colorlib
+            .clearfix
+    #custom_notifications.custom-notifications.dsp_none
+      %ul.list-unstyled.notifications.clearfix{"data-tabbed_notifications" => "notif-group"}
+      .clearfix
+      #notif-group.tabbed_notifications
+    = yield :extra_js
